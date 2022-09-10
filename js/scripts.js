@@ -1,4 +1,4 @@
-function mrRobo(userInput) {
+function mrRobo(theInput) {
   let thisArray = [];
   for (let index = 0; index <= userInput; index++) {
     let appendable = index
