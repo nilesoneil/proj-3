@@ -5,10 +5,26 @@ function mrRobo(userInput) {
   if (index.toString().includes("1")) {
     appendable = "beep";
   }
-  if (index.toString().include("2") {
+  if (index.toString().includes("2")) {
     appendable = "boop";
+  }
+  if (index.toString().includes("3")) {
+    appendable = "won't you be my neighbor";
   }
   thisArray.push(appendable);
   }
-  return thisArray
+return thisArray
 }
+
+function addFormListener() {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", onFormSubmit)
+}
+
+function onFormSubmit(event) {
+  event.preventDefault();
+  const theInput = document.querySelector("#userInput").value
+  const result = mrRobo(theInput)
+}
+
+window.addEventListener("load", addFormListener);
