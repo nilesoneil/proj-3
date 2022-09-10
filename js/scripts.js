@@ -5,6 +5,9 @@ function mrRobo(userInput) {
   if (index.toString().includes("1")) {
     appendable = "beep";
   }
+  if (index.toString().include("2") {
+    appendable = "boop";
+  }
   thisArray.push(appendable);
   }
   return thisArray

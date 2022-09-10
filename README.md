@@ -25,10 +25,15 @@ _A webpage for inputting numbers and getting a string back_
 
 Describe: mrRobo()
 
-Test: "It should return "beep" if a input is a 1."
+Test: "It should return "beep" if an input is a 1."
 Code:
 let (number);
 Expected Output: "beep"
+
+Test: "It should return "boop" if an input is a 2."
+Code:
+let(number);
+Expected Output: "boop"
 
 ## Known Bugs
 
