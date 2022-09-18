@@ -1,6 +1,6 @@
 function mrRobo(theInput) {
   let thisArray = [];
-  for (let index = 0; index <= userInput; index++) {
+  for (let index = 0; index <= theInput; index++) {
     let appendable = index
   if (index.toString().includes("1")) {
     appendable = "beep";
@@ -23,7 +23,7 @@ function addFormListener() {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  const theInput = document.querySelector(parseInt("#userInput")).value
+  const theInput = parseInt(document.querySelector(parseInt("#userInput")).value)
   const result = mrRobo(theInput)
 }
 

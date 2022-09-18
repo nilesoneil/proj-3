@@ -28,12 +28,16 @@ Describe: mrRobo()
 Test: "It should return "beep" if an input is a 1."
 Code:
 let (number);
-Expected Output: "beep"
+Expected Output: [0, "beep"]
 
 Test: "It should return "boop" if an input is a 2."
-Code:
+Code: mrRobo(2)
 let(number);
-Expected Output: "boop"
+Expected Output: [0, "beep", "boop"]
+
+Test: "should return "won't you be my neighbor" if an input is a 3."
+code: mrRobo(3)
+Expected Output: [0, "beep", "boop", "won't you be my neighbor?"]
 
 ## Known Bugs
 
