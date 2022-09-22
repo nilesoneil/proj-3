@@ -23,8 +23,9 @@ function addFormListener() {
 
 function onFormSubmit(event) {
   event.preventDefault();
-  const theInput = parseInt(document.querySelector(parseInt("#userInput")).value)
+  const theInput = parseInt(document.querySelector("input").value)
   const result = mrRobo(theInput)
+  document.getElementById("result").textContent = result;
 }
 
 window.addEventListener("load", addFormListener);
